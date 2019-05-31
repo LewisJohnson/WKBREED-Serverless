@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
+import { SpotifyComponent } from './spotify/spotify.component';
 import { TeamComponent } from './team/team.component';
 import { FetchTourDatesComponent } from './fetch-tour-dates/fetch-tour-dates.component';
 
@@ -16,7 +16,7 @@ import { FetchTourDatesComponent } from './fetch-tour-dates/fetch-tour-dates.com
 		AppComponent,
 		NavMenuComponent,
 		HomeComponent,
-		CounterComponent,
+		SpotifyComponent,
 		TeamComponent,
 		FetchTourDatesComponent
 	],
@@ -26,7 +26,6 @@ import { FetchTourDatesComponent } from './fetch-tour-dates/fetch-tour-dates.com
 		FormsModule,
 		RouterModule.forRoot([
 			{ path: '', component: HomeComponent, pathMatch: 'full' },
-			{ path: 'counter', component: CounterComponent }
 		])
 	],
 	providers: [],
