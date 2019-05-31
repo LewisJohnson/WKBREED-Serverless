@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
 	selector: 'app-fetch-tour-dates',
 	templateUrl: './fetch-tour-dates.component.html',
-	styleUrls: ['./fetch-tour-dates.component.css']
+	styleUrls: ['./fetch-tour-dates.component.scss']
 })
 
 export class FetchTourDatesComponent {

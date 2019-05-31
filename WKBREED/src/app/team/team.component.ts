@@ -5,7 +5,7 @@ import * as $ from 'jquery';
 @Component({
 	selector: 'app-team',
 	templateUrl: './team.component.html',
-	styleUrls: ['./team.component.css'],
+	styleUrls: ['./team.component.scss'],
 })
 
 export class TeamComponent {
