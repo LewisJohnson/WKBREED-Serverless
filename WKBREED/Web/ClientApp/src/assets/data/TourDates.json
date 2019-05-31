@@ -1,0 +1,17 @@
+{
+	"tours": [
+		{
+			"Venue": "Box Park",
+			"Location": "London, GB",
+			"Date": "01/04/2019",
+			"TicketUrl": "https://wkbreed.com/"
+		},
+		{
+			"Venue": "Loud Arena",
+			"Location": "Manchester, GB",
+			"Date": "03/04/2019",
+			"TicketUrl": "https://wkbreed.com/"
+		}
+	]
+
+}

@@ -1,0 +1,25 @@
+<section class="my-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h3>TEAM</h3>
+				<p *ngIf="!teamMembers" class="text-white"><em>Loading...</em></p>
+			</div>
+		</div>
+
+		<div class="row" *ngIf="teamMembers">
+			<div class="col-3">
+				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+					<a *ngFor="let member of teamMembers" (click)="onSelect(member)" class="nav-link" id="v-pills-{{ member.Slug }}-tab" data-toggle="pill" href="#v-pills-{{ member.Slug }}" role="tab" attr.aria-controls="v-pills-{{ member.Slug }}">{{ member.Name }}</a>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="tab-content" id="v-pills-tabContent">
+					<div *ngFor="let member of teamMembers" class="tab-pane fade" id="v-pills-{{ member.Slug }}">
+						man like {{ member.Name }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
