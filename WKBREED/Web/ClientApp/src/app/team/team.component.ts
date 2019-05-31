@@ -29,7 +29,7 @@ export class TeamComponent {
 		}, 200, this.selectedTeamMember.Slug);
 	}
 
-	constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+	constructor(http: HttpClient, @Inject('GITHUB_BASE_URL') baseUrl: string) {
 		http.get<TeamJson>(baseUrl + 'assets/data/Team.json').subscribe(result => {
 			this.teamMembers = result.teamMembers;
 			this.selectedTeamMember = this.teamMembers[0];

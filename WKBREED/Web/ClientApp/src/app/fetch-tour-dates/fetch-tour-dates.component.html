@@ -1,24 +1,16 @@
-<section class="my-5">
-	<div class="container">
-		<div class="row">
-			<h3>TOUR DATES</h3>
+<h3>TOUR DATES</h3>
 
-			<p *ngIf="!tourDates" class="text-white"><em>Loading...</em></p>
+<p *ngIf="!tourDates" class="text-white"><em>Loading...</em></p>
 
-			<table class="table table-hover mt-3" *ngIf="tourDates">
-				<tbody>
-					<tr *ngFor="let tour of tourDates">
-						<td><b>{{ tour.Date }}</b></td>
-						<td>{{ tour.Venue }}</td>
-						<td>{{ tour.Location }}</td>
-						<td class="text-right">
-							<a class="btn btn-sm border border-white" href="{{ tour.TicketUrl }}" target="_blank" rel="noopener">TICKETS</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-</section>
-
-<!-- todo: Animate the names as they appear in the video-->
+<table class="table table-hover mt-3" *ngIf="tourDates">
+	<tbody>
+		<tr *ngFor="let tour of tourDates">
+			<td><b>{{ tour.Date }}</b></td>
+			<td>{{ tour.Venue }}</td>
+			<td>{{ tour.Location }}</td>
+			<td class="text-right">
+				<a class="btn btn-sm border border-white" href="{{ tour.TicketUrl }}" target="_blank" rel="noopener">TICKETS</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
