@@ -16,16 +16,16 @@ export class TeamComponent {
 		this.selectedTeamMember = teamMember;
 
 		for (let i = 0; i < this.teamMembers.length; i++) {
-			let tempMem = this.teamMembers[i];
+			const tempMem = this.teamMembers[i];
 
-			$("#v-pills-" + tempMem.Slug + "-tab").removeClass("active");
-			$("#v-pills-" + tempMem.Slug).removeClass("active").removeClass("show");
+			$('#v-pills-' + tempMem.Slug + '-tab').removeClass('active');
+			$('#v-pills-' + tempMem.Slug).removeClass('active').removeClass('show');
 		}
 
-		$("#v-pills-" + this.selectedTeamMember.Slug + "-tab").addClass("active");
+		$('#v-pills-' + this.selectedTeamMember.Slug + '-tab').addClass('active');
 
 		setTimeout(function (slug) {
-			$("#v-pills-" + slug).addClass("active").addClass("show");
+			$('#v-pills-' + slug).addClass('active').addClass('show');
 		}, 200, this.selectedTeamMember.Slug);
 	}
 

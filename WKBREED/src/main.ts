@@ -10,7 +10,7 @@ export function getBaseUrl() {
 
 // We use Github for static data to save on Azure spending
 export function getBaseGithubUrl() {
-	return "https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/";
+	return 'https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/';
 }
 
 const providers = [
