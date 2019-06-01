@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class FetchTourDatesComponent {
 	public tourDates: TourDate[];
 
-	constructor(http: HttpClient, @Inject('GITHUB_BASE_URL') baseUrl: string) {
+	constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
 		http.get<TourDateJson>(baseUrl + 'assets/data/TourDates.json').subscribe(result => {
 			this.tourDates = result.tours;
 		}, error => console.error(error));
@@ -18,7 +18,7 @@ export class FetchTourDatesComponent {
 }
 
 interface TourDateJson {
-	tours: TourDate[]
+	tours: TourDate[];
 }
 
 interface TourDate {

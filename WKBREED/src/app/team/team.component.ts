@@ -15,7 +15,7 @@ export class TeamComponent {
 	onSelect(teamMember: TeamMember): void {
 		this.selectedTeamMember = teamMember;
 
-		for (var i = 0; i < this.teamMembers.length; i++) {
+		for (let i = 0; i < this.teamMembers.length; i++) {
 			let tempMem = this.teamMembers[i];
 
 			$("#v-pills-" + tempMem.Slug + "-tab").removeClass("active");
@@ -29,16 +29,16 @@ export class TeamComponent {
 		}, 200, this.selectedTeamMember.Slug);
 	}
 
-	constructor(http: HttpClient, @Inject('GITHUB_BASE_URL') baseUrl: string) {
-		http.get<TeamJson>(baseUrl + 'assets/data/Team.json').subscribe(result => {
-			this.teamMembers = result.teamMembers;
-			this.selectedTeamMember = this.teamMembers[0];
-		}, error => console.error(error));
+	constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+		// http.get<TeamJson>(baseUrl + 'assets/data/Team.json').subscribe(result => {
+		// 	this.teamMembers = result.teamMembers;
+		// 	this.selectedTeamMember = this.teamMembers[0];
+		// }, error => console.error(error));
 	}
 }
 
 interface TeamJson {
-	teamMembers: TeamMember[]
+	teamMembers: TeamMember[];
 }
 
 interface TeamMember {
