@@ -20,7 +20,7 @@ header {
 		-webkit-transform: translateX(-50%) translateY(-50%);
 		transform: translateX(-50%) translateY(-50%);
 	}
-	
+
 	.container {
 		position: relative;
 		z-index: 2;
@@ -42,6 +42,12 @@ header {
 	color: white;
 }
 
-a:hover {
-	color: red;
+@media (pointer: coarse) and (hover: none) {
+	header {
+		background: url('src/assets/images/mobile-banner.jpg') black no-repeat center scroll;
+	}
+
+	header video {
+	  display: none;
+	}
 }

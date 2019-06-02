@@ -1,1 +1,11 @@
-$primary: red;
+$enable-responsive-font-sizes: true;
+
+$wkbreed-red: #dc3545;
+
+$primary: $wkbreed-red;
+$link-hover-color: $wkbreed-red;
+
+$navbar-dark-color: white;
+$navbar-dark-hover-color: $wkbreed-red;
+
+$table-hover-bg: rgba(255, 255, 255, 0.1);
