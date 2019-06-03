@@ -16,3 +16,31 @@ a {
 		text-decoration: none;
 	}
 }
+
+.social-icon {
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.icon-spotify {
+	@extend .social-icon;
+	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/spotify_logo.png');
+}
+
+.icon-apple {
+	@extend .social-icon;
+	background-image: url('https://tools.applemusic.com/embed/v1/app-icon.svg?hex=FFFFFF');
+}
+
+.icon-instgram {
+	@extend .social-icon;
+	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/ig_logo.png');
+}
+
+.icon-twitter {
+	@extend .social-icon;
+	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/twitter_logo.png');
+}
