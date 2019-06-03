@@ -27,7 +27,7 @@ a {
 
 .icon-spotify {
 	@extend .social-icon;
-	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/spotify_logo.png');
+	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/spotify_logo.svg');
 }
 
 .icon-apple {
@@ -37,10 +37,10 @@ a {
 
 .icon-instgram {
 	@extend .social-icon;
-	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/ig_logo.png');
+	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/instagram_logo.svg');
 }
 
 .icon-twitter {
 	@extend .social-icon;
-	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/twitter_logo.png');
+	background-image: url('https://raw.githubusercontent.com/LewisJohnson/WKBREED-Serverless/master/WKBREED/src/assets/images/twitter_logo.svg');
 }
